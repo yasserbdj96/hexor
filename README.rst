@@ -2,6 +2,8 @@ hexor texts color
 ==========================
 'hexor' for color the texts in hex colors.
 
+.. image:: https://travis-ci.com/byRo0t96/hexor.svg?branch=main
+
 Installation
 ============
 

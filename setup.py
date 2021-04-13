@@ -8,10 +8,10 @@ from setuptools import setup, find_packages
 # Setting up
 setup(
     name="hexor",
-    version='0.0.1',
+    version='0.0.2',
     author="Yasser BDJ (Ro0t96)",
     author_email="by.root96@gmail.com",
-    description='hexor for color the texts in hex colors.',
+    description='hexor for color the texts in hex or rgb colors.',
     long_description_content_type="text/markdown",
     long_description=open('README.rst').read(),
     packages=find_packages(),
@@ -20,7 +20,7 @@ setup(
         'Source Code': 'https://github.com/byRo0t96/hexor',
     },
     install_requires=[],
-    keywords=['python','text','color','hex'],
+    keywords=['python','hexor','text','color','hex','rgb'],
     classifiers=[
         "Development Status :: 1 - Planning",
         "Intended Audience :: Developers",

@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 # Setting up
 setup(
     name="hexor",
-    version='0.0.2',
+    version='0.0.3',
     author="Yasser BDJ (Ro0t96)",
     author_email="by.root96@gmail.com",
     description='hexor for color the texts in hex or rgb colors.',

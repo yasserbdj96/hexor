@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 # Setting up
 setup(
     name="hexor",
-    version='0.0.3',
+    version=open('version.txt').read(),
     author="Yasser BDJ (Ro0t96)",
     author_email="by.root96@gmail.com",
     description='hexor for color the texts in hex or rgb colors.',
@@ -16,6 +16,7 @@ setup(
     long_description=open('README.rst').read(),
     packages=find_packages(),
     project_urls={  # Optional
+        'Author WebSite': "https://byro0t96.github.io/",
         'Author Github': "https://github.com/byRo0t96",
         'Source Code': 'https://github.com/byRo0t96/hexor',
     },

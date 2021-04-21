@@ -89,3 +89,7 @@ Changelog
 - First public release.
 
 .. end changelog
+
+
+.. image:: https://ko-fi.com/img/githubbutton_sm.svg
+   :target: https://ko-fi.com/L3L34CEPV

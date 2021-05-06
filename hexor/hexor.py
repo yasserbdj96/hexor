@@ -3,7 +3,10 @@
 # code by : Yasser BDJ
 # email : by.root96@gmail.com
 #s
-import os
+from pipincluder import pipincluder
+
+#import pakages by pipincluder:
+exec(pipincluder("import os").modules())
 
 #start hexor class:
 class hexor:

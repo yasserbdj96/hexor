@@ -1,8 +1,8 @@
-[![Python package](https://github.com/yasserbdj96/hexor/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/yasserbdj96/hexor/actions/workflows/python-app.yml)
-
 <h1>hexor</h1>
 
 <p>Coloring texts and their backgrounds in command line interface (cli), with rgb or hex types.</p>
+
+[![Python package](https://github.com/yasserbdj96/hexor/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/yasserbdj96/hexor/actions/workflows/python-app.yml)
 
 <h2>Languages:</h2>
 * python3

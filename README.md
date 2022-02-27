@@ -122,20 +122,8 @@ hexor(False,"rgb").c("Text is red and background is blue","255,0,0","26,115,232"
 
 <h1></h1> 
 
-<p align="center">
-    BTC : 1HLuGsaKgFWSp7aY9zQAXEB2xdPS1QhJTu
-</p>
-
 <div align="center">
-    <a align="center" href="https://ko-fi.com/yasserbdj96">
-        <img alt="ko-fi" align="center" src="https://ko-fi.com/img/githubbutton_sm.svg">
-    </a>
-</div>
-
-<div align="center">
-    <a href="https://yasserbdj96.github.io">
-        <img alt="yasserbdj96" height="100" src="https://raw.githubusercontent.com/yasserbdj96/yasserbdj96/main/images/yasserbdj96.png">
-    </a>
+    <a href="http://yasserbdj96.github.io/">Go to this link to get more information</a>
     <br>
     <a href="https://github.com/yasserbdj96/hexor" align="center">
         <img align="center"  alt="" src="https://visitor-badge.laobi.icu/badge?page_id=yasserbdj96.hexor">

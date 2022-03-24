@@ -21,7 +21,7 @@ class hexor:
 
     #c:
     def c(self,text,foreground,background=False):
-        os.system('')
+        #os.system('')
         if self.color_type=="hex":
             f=hexor.torgb(foreground)
         elif self.color_type=="rgb":

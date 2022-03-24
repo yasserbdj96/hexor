@@ -14,14 +14,14 @@ class hexor:
         self.color_type=color_type
 
     #torgb:
-    def torgb(hex):
-        hexx=hex.lstrip('#')
+    def torgb(hexc):
+        hexx=hexc.lstrip('#')
         lv=len(hexx)
         return tuple(int(hexx[i:i+lv//3],16) for i in range(0,lv,lv//3))
 
     #c:
     def c(self,text,foreground,background=False):
-        #os.system('')
+        os.system('')
         if self.color_type=="hex":
             f=hexor.torgb(foreground)
         elif self.color_type=="rgb":

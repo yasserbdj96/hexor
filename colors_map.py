@@ -5,9 +5,11 @@ from hexor import hexor
 try:
     m=tuple(map(int,sys.argv[1].split(',')))
     x=int(sys.argv[2])
-except:
+except ZeroDivisionError:
     print(f"Usage: python3 {sys.argv[0]} RGB RANGE\n ex: python3 {sys.argv[0]} 255,0,0 50")
     exit()
+finally:
+    pass
 #
 p1=hexor(True,"hex")
 
@@ -17,14 +19,14 @@ mxd=[0,0,0]
 mxu=[255,255,255]
 
 #
-if not m[0]-x<=0:mxd[0]=m[0]-x
-if not m[1]-x<=0:mxd[1]=m[1]-x
-if not m[2]-x<=0:mxd[2]=m[2]-x
+for g in range(0,3):
+    if not m[g]-x<=0:
+        mxd[g]=m[g]-x
 
 #
-if not m[0]+x>=255:mxu[0]=m[0]+x
-if not m[1]+x>=255:mxu[1]=m[1]+x
-if not m[2]+x>=255:mxu[2]=m[2]+x
+for f in range(0,3):
+    if not m[f]+x>=255:
+        mxu[f]=m[f]+x
 
 #
 for i in range(mxd[0],mxu[0]+1):

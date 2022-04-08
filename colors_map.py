@@ -36,11 +36,10 @@ for i in range(mxd[0],mxu[0]+1):
 
 #
 k=""
-for i in range(len(colors)):
-    bg=colors[i]
+for i,color in enumerate(colors):
     if i%18==0:
         print(k)
         k=""
     else:
-        k+=p1.c(f" {bg} ","#ffffff",bg)
+        k+=p1.c(f" {color} ","#ffffff",color)
 print(k)

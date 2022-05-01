@@ -2,7 +2,7 @@
 
 <p>Coloring texts and their backgrounds in command line interface (cli), with rgb or hex types.</p>
 
-[![Python package](https://github.com/yasserbdj96/hexor/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/yasserbdj96/hexor/actions/workflows/python-app.yml)  [![CodeFactor](https://www.codefactor.io/repository/github/yasserbdj96/hexor/badge)](https://www.codefactor.io/repository/github/yasserbdj96/hexor)
+[![Python package](https://github.com/yasserbdj96/hexor/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/yasserbdj96/hexor/actions/workflows/python-app.yml) [![Docker image](https://github.com/yasserbdj96/hexor/actions/workflows/docker-image.yml/badge.svg)](https://github.com/yasserbdj96/hexor/actions/workflows/docker-image.yml) [![CodeFactor](https://www.codefactor.io/repository/github/yasserbdj96/hexor/badge)](https://www.codefactor.io/repository/github/yasserbdj96/hexor)
 
 <h2>Languages:</h2>
 * python3
@@ -128,4 +128,5 @@ hexor(False,"rgb").c("Text is red and background is blue","255,0,0","26,115,232"
     <a href="https://github.com/yasserbdj96/hexor" align="center">
         <img align="center"  alt="" src="https://visitor-badge.laobi.icu/badge?page_id=yasserbdj96.hexor">
     </a>
-</div>
+</div>
+

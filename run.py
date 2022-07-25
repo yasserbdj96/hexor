@@ -24,7 +24,7 @@ try:
     
     try:
         BG = os.environ['BG'] if "BG" in os.environ else sys.argv[4]
-    except:
+    except Exception as e:
         BG=""
 except Exception as e:
     print(f"USAGE : python3 {sys.argv[0]} <TYPE*> <TEXT*> <FC*> <BG>")

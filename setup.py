@@ -7,8 +7,8 @@
 from setuptools import setup,find_packages
 setup(
     name="hexor",
-    version="0.0.10",
-    author="YasserBDJ96",
+    version="0.0.11",
+    author="yasserbdj96",
     author_email="yasser.bdj96@gmail.com",
     description='''Coloring texts and their backgrounds in command line interface (cli), with rgb or hex types.''',
     long_description_content_type="text/markdown",

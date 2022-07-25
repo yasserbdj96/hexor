@@ -1,3 +1,17 @@
+#!/usr/bin/env python
+# coding:utf-8
+#   |                                                          |
+# --+----------------------------------------------------------+--
+#   |   Code by : yasserbdj96                                  |
+#   |   Email   : yasser.bdj96@gmail.com                       |
+#   |   Github  : https://github.com/yasserbdj96               |
+#   |   BTC     : bc1q2dks8w8uurca5xmfwv4jwl7upehyjjakr3xga9   |
+# --+----------------------------------------------------------+--  
+#   |        all posts #yasserbdj96 ,all views my own.         |
+# --+----------------------------------------------------------+--
+#   |                                                          |
+
+#START{
 from hexor import hexor
 
 # Example:1
@@ -23,3 +37,4 @@ print(p1.c("Text is red and background is blue","255,0,0","26,115,232"))
 # Example:5
 hexor().c("Text is red","#ff0000")# hexor().c("Text is red","#ff0000")
 hexor(False,"rgb").c("Text is red and background is blue","255,0,0","26,115,232")
+#}END.

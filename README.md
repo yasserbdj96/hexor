@@ -9,16 +9,73 @@
 
 <h2>Supported Distributions:</h2>
 
-| Distribution | Version Check     | Python Test Version | Supported | Status  | Everything works |
-| :----------: | :---------------: | :-----------------: | :-------: | :----:  | :--------------: |
-| Ubuntu       | 20.04.3           | 3.6, 3.7, 3.8, 3.9  | Yes       | Working | Yes              |
-| Windwos      | 11.6.4            | 3.6, 3.7, 3.8, 3.9  | Yes       | Working | Yes              |
-| MacOS        | 10.0.20348        | 3.6, 3.7, 3.8, 3.9  | Yes       | Working | Yes              |
+| Distribution     | Version Check | Python Test Version       | Supported | Status    | Everything works |
+| :--------------: | :-----------: | :-----------------------: | :-------: | :-------: | :--------------: |
+| Ubuntu           | 20.04.4       | 3.6, 3.7, 3.8, 3.9, 3.10  | Yes       | Working   | Yes              |
+| Windwos          | 10.0.20348    | 3.6, 3.7, 3.8, 3.9, 3.10  | Yes       | Working   | Yes              |
+| MacOS            | 11.6.6        | 3.6, 3.7, 3.8, 3.9, 3.10  | Yes       | Working   | Yes              |
+| Android (termux) | 10            | 3.6, 3.7, 3.8, 3.9, 3.10  | Yes       | Working   | Yes              |
 
-<h2>Installation:</h2>
+<h2>Docker pull,build & run:</h2>
+
+```bash
+# pull:
+docker pull docker.io/yasserbdj96/hexor:latest
+
+# build:
+docker build -t docker.io/yasserbdj96/hexor:latest .
+
+# run:
+docker run -e T="hex" -e TEXT="Text is red" -e FC="#ff0000" -i -t docker.io/yasserbdj96/hexor:latest
+# OR
+docker run -e T="hex" -e TEXT="Text is red and background is blue" -e FC="#ff0000" -e BG="1a73e8" -i -t docker.io/yasserbdj96/hexor:latest
+```
+
+<h2>Local Docker build & run:</h2>
+
+```bash
+# build:
+docker build -t hexor:latest .
+# run:
+docker run -e T="hex" -e TEXT="Text is red" -e FC="#ff0000" -i -t hexor:latest
+# OR
+docker run -e T="hex" -e TEXT="Text is red and background is blue" -e FC="#ff0000" -e BG="1a73e8" -i -t hexor:latest
+
+```
+
+<h2>Github Packages pull,build & run:</h2>
+
+```bash
+# pull:
+docker pull ghcr.io/yasserbdj96/hexor:latest
+
+# build:
+docker build -t ghcr.io/yasserbdj96/hexor:latest .
+
+# run:
+docker run -e T="hex" -e TEXT="Text is red" -e FC="#ff0000" -i -t ghcr.io/yasserbdj96/hexor:latest
+# OR
+docker run -e T="hex" -e TEXT="Text is red and background is blue" -e FC="#ff0000" -e BG="1a73e8" -i -t ghcr.io/yasserbdj96/hexor:latest
+```
+
+<h2>Python Package Installation:</h2>
 
 ```
 pip install hexor
+```
+
+<h2>Run without installation:</h2>
+
+```
+git clone https://github.com/yasserbdj96/hexor.git
+cd hexor
+python3 run.py <TYPE*> <TEXT*> <FC*> <BG>
+
+# TYPE = hex/rgb.
+# TEXT = Your text.
+# FC   = Front Color.
+# BG   = Background Color.
+# *    = All inputs must be entered.
 ```
 
 <h2>Usage:</h2>
@@ -80,14 +137,17 @@ hexor(False,"rgb").c("Text is red and background is blue","255,0,0","26,115,232"
 <h2>Screenshot:</h2>
 
 <div align="center">
-    <a href="https://raw.githubusercontent.com/yasserbdj96/hexor/main/screenshot/screenshot_1.png">
-        <img alt="yasserbdj96" height="100" src="https://raw.githubusercontent.com/yasserbdj96/hexor/main/screenshot/screenshot_1.png">
+    <a href="https://raw.githubusercontent.com/yasserbdj96/hexor/main/screenshot/screenshot.png">
+        <img alt="yasserbdj96" height="100" src="https://raw.githubusercontent.com/yasserbdj96/hexor/main/screenshot/screenshot.png">
     </a>
 </div>
 
 <h2>Changelog History:</h2>
 
 ```
+## 0.0.11 [25-07-2022]
+ - Fix bugs.
+
 ## 0.0.10 [26-02-2022]
  - Fix bugs.
  
@@ -130,3 +190,7 @@ hexor(False,"rgb").c("Text is red and background is blue","255,0,0","26,115,232"
     </a>
 </div>
 
+<br>
+<br>
+
+all posts [`#yasserbdj96`](#yasserbdj96) ,all views my own.

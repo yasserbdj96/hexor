@@ -1,7 +1,15 @@
 #!/usr/bin/env python
 # coding:utf-8
-#code by:YasserBDJ96
-#email:yasser.bdj96@gmail.com
+#   |                                                          |
+# --+----------------------------------------------------------+--
+#   |   Code by : yasserbdj96                                  |
+#   |   Email   : yasser.bdj96@gmail.com                       |
+#   |   Github  : https://github.com/yasserbdj96               |
+#   |   BTC     : bc1q2dks8w8uurca5xmfwv4jwl7upehyjjakr3xga9   |
+# --+----------------------------------------------------------+--  
+#   |        all posts #yasserbdj96 ,all views my own.         |
+# --+----------------------------------------------------------+--
+#   |                                                          |
 
 #START{
 import os
@@ -42,4 +50,4 @@ class hexor:
                 return f"\033[38;2;{f[0]};{f[1]};{f[2]}m{text}\033[0m"
             if self.return_opt==False:
                 print(f"\033[38;2;{f[0]};{f[1]};{f[2]}m{text}\033[0m")
-#}END.
+#}END.

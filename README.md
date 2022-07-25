@@ -120,14 +120,14 @@ print(p2.c("Text is red","#ff0000"))
 print(p2.c("Text is red and background is blue","#ff0000","#1a73e8"))
 
 # Example:3
-p1=hexor(False,"rgb")
-p1.c("Text is red","255,0,0")
-p1.c("Text is red and background is blue","255,0,0","26,115,232")
+p3=hexor(False,"rgb")
+p3.c("Text is red","255,0,0")
+p3.c("Text is red and background is blue","255,0,0","26,115,232")
 
 # Example:4
-p1=hexor(True,"rgb")
-print(p1.c("Text is red","255,0,0"))
-print(p1.c("Text is red and background is blue","255,0,0","26,115,232"))
+p4=hexor(True,"rgb")
+print(p4.c("Text is red","255,0,0"))
+print(p4.c("Text is red and background is blue","255,0,0","26,115,232"))
 
 # Example:5
 hexor().c("Text is red","#ff0000")# hexor().c("Text is red","#ff0000")

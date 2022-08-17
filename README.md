@@ -2,7 +2,7 @@
 
 <p>Coloring texts and their backgrounds in command line interface (cli), with rgb or hex types.</p>
 
-[![Python package](https://github.com/yasserbdj96/hexor/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/yasserbdj96/hexor/actions/workflows/python-app.yml) [![CodeFactor](https://www.codefactor.io/repository/github/yasserbdj96/hexor/badge)](https://www.codefactor.io/repository/github/yasserbdj96/hexor) [![Join the chat at https://gitter.im/yasserbdj96/hexor](https://badges.gitter.im/yasserbdj96/hexor.svg)](https://gitter.im/yasserbdj96/hexor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Python package](https://github.com/yasserbdj96/hexor/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/yasserbdj96/hexor/actions/workflows/python-app.yml) [![CodeFactor](https://www.codefactor.io/repository/github/yasserbdj96/hexor/badge)](https://www.codefactor.io/repository/github/yasserbdj96/hexor) [![Visitors](https://visitor-badge.laobi.icu/badge?page_id=yasserbdj96.hexor)](https://github.com/yasserbdj96/hexor) [![Join the chat at https://gitter.im/yasserbdj96/hexor](https://badges.gitter.im/yasserbdj96/hexor.svg)](https://gitter.im/yasserbdj96/hexor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 <h2>Languages:</h2>
 * python3

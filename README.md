@@ -16,52 +16,16 @@
 | MacOS            | 11.6.6        | 3.6, 3.7, 3.8, 3.9, 3.10  | Yes       | Working   | Yes              |
 | Android (termux) | 10            | 3.6, 3.7, 3.8, 3.9, 3.10  | Yes       | Working   | Yes              |
 
-<h2>Docker pull,build & run:</h2>
-
-```bash
-# pull:
-docker pull docker.io/yasserbdj96/hexor:latest
-
-# build:
-docker build -t docker.io/yasserbdj96/hexor:latest .
-
-# run:
-docker run -e T="hex" -e TEXT="Text is red" -e FC="#ff0000" -i -t docker.io/yasserbdj96/hexor:latest
-# OR
-docker run -e T="hex" -e TEXT="Text is red and background is blue" -e FC="#ff0000" -e BG="1a73e8" -i -t docker.io/yasserbdj96/hexor:latest
-```
-
-<h2>Local Docker build & run:</h2>
-
-```bash
-# build:
-docker build -t hexor:latest .
-# run:
-docker run -e T="hex" -e TEXT="Text is red" -e FC="#ff0000" -i -t hexor:latest
-# OR
-docker run -e T="hex" -e TEXT="Text is red and background is blue" -e FC="#ff0000" -e BG="1a73e8" -i -t hexor:latest
-
-```
-
-<h2>Github Packages pull,build & run:</h2>
-
-```bash
-# pull:
-docker pull ghcr.io/yasserbdj96/hexor:latest
-
-# build:
-docker build -t ghcr.io/yasserbdj96/hexor:latest .
-
-# run:
-docker run -e T="hex" -e TEXT="Text is red" -e FC="#ff0000" -i -t ghcr.io/yasserbdj96/hexor:latest
-# OR
-docker run -e T="hex" -e TEXT="Text is red and background is blue" -e FC="#ff0000" -e BG="1a73e8" -i -t ghcr.io/yasserbdj96/hexor:latest
-```
-
 <h2>Python Package Installation:</h2>
 
 ```
+# install from pypi:
 pip install hexor
+
+# local install:
+git clone https://github.com/yasserbdj96/hexor.git
+cd hexor
+sudo python setup.py install
 ```
 
 <h2>Run without installation:</h2>
@@ -78,7 +42,7 @@ python3 run.py <TYPE*> <TEXT*> <FC*> <BG>
 # *    = All inputs must be entered.
 ```
 
-<h2>Usage:</h2>
+<h2>Script Usage:</h2>
 
 ```python
 from hexor import hexor
@@ -104,7 +68,7 @@ p1.c("<TEXT>","<FOREGROUND>")
 p1.c("<TEXT>","<FOREGROUND>","<BACKGROUND>")
 ```
 
-<h2>Examples:</h2>
+<h2>Script Examples:</h2>
 
 ```python
 from hexor import hexor
@@ -120,14 +84,14 @@ print(p2.c("Text is red","#ff0000"))
 print(p2.c("Text is red and background is blue","#ff0000","#1a73e8"))
 
 # Example:3
-p3=hexor(False,"rgb")
-p3.c("Text is red","255,0,0")
-p3.c("Text is red and background is blue","255,0,0","26,115,232")
+p1=hexor(False,"rgb")
+p1.c("Text is red","255,0,0")
+p1.c("Text is red and background is blue","255,0,0","26,115,232")
 
 # Example:4
-p4=hexor(True,"rgb")
-print(p4.c("Text is red","255,0,0"))
-print(p4.c("Text is red and background is blue","255,0,0","26,115,232"))
+p1=hexor(True,"rgb")
+print(p1.c("Text is red","255,0,0"))
+print(p1.c("Text is red and background is blue","255,0,0","26,115,232"))
 
 # Example:5
 hexor().c("Text is red","#ff0000")# hexor().c("Text is red","#ff0000")
@@ -145,6 +109,9 @@ hexor(False,"rgb").c("Text is red and background is blue","255,0,0","26,115,232"
 <h2>Changelog History:</h2>
 
 ```
+## 0.0.12 [17-08-2022]
+ - Fix bugs.
+
 ## 0.0.11 [25-07-2022]
  - Fix bugs.
 
@@ -181,16 +148,12 @@ hexor(False,"rgb").c("Text is red and background is blue","255,0,0","26,115,232"
 ```
 
 <h1></h1> 
-
-<div align="center">
-    <a href="http://yasserbdj96.github.io/">Go to this link to get more information</a>
-    <br>
-    <a href="https://github.com/yasserbdj96/hexor" align="center">
-        <img align="center"  alt="" src="https://visitor-badge.laobi.icu/badge?page_id=yasserbdj96.hexor">
-    </a>
-</div>
-
-<br>
+Don't forget to star ⭐ this repository
 <br>
 
 all posts [`#yasserbdj96`](#yasserbdj96) ,all views my own.
+
+<br>
+<div align="center">
+    <a href="http://yasserbdj96.github.io/">Go to this link to get more information.</a>
+</div>

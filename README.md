@@ -41,20 +41,20 @@
 
 ```
 # install from pypi:
-pip install hexor
+❯ pip install hexor
 
 # local install:
-git clone https://github.com/yasserbdj96/hexor.git
-cd hexor
-sudo python setup.py install
+❯ git clone https://github.com/yasserbdj96/hexor.git
+❯ cd hexor
+❯ sudo python setup.py install
 ```
 
 <h2>Run without installation:</h2>
 
 ```
-git clone https://github.com/yasserbdj96/hexor.git
-cd hexor
-python3 run.py <TYPE*> <TEXT*> <FC*> <BG>
+❯ git clone https://github.com/yasserbdj96/hexor.git
+❯ cd hexor
+❯ python3 run.py <TYPE*> <TEXT*> <FC*> <BG>
 
 # TYPE = hex/rgb.
 # TEXT = Your text.

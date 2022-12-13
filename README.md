@@ -2,7 +2,28 @@
 
 <p>Coloring texts and their backgrounds in command line interface (cli), with rgb or hex types.</p>
 
-[![Python package](https://github.com/yasserbdj96/hexor/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/yasserbdj96/hexor/actions/workflows/python-app.yml) [![CodeFactor](https://www.codefactor.io/repository/github/yasserbdj96/hexor/badge)](https://www.codefactor.io/repository/github/yasserbdj96/hexor) [![Visitors](https://visitor-badge.laobi.icu/badge?page_id=yasserbdj96.hexor)](https://github.com/yasserbdj96/hexor) [![Join the chat at https://gitter.im/yasserbdj96/hexor](https://badges.gitter.im/yasserbdj96/hexor.svg)](https://gitter.im/yasserbdj96/hexor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Test on Ubuntu latest](https://github.com/yasserbdj96/hexor/actions/workflows/python-app-on-linux.yml/badge.svg)](https://github.com/yasserbdj96/hexor/actions/workflows/python-app-on-linux.yml)
+[![Test on Windows latest](https://github.com/yasserbdj96/hexor/actions/workflows/python-app-on-win.yml/badge.svg)](https://github.com/yasserbdj96/hexor/actions/workflows/python-app-on-win.yml)
+[![Test on MacOS latest](https://github.com/yasserbdj96/hexor/actions/workflows/python-app-on-mac.yml/badge.svg)](https://github.com/yasserbdj96/hexor/actions/workflows/python-app-on-mac.yml)
+[![pypi-setup](https://github.com/yasserbdj96/hexor/actions/workflows/pypi-setup.yml/badge.svg)](https://github.com/yasserbdj96/hexor/actions/workflows/pypi-setup.yml)
+[![Upload to PYPI](https://github.com/yasserbdj96/hexor/actions/workflows/pipup.yml/badge.svg)](https://github.com/yasserbdj96/hexor/actions/workflows/pipup.yml)
+[![Deploy static content to Pages](https://github.com/yasserbdj96/hexor/actions/workflows/pages.yml/badge.svg)](https://github.com/yasserbdj96/hexor/actions/workflows/pages.yml)
+[![CodeQL](https://github.com/yasserbdj96/hexor/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/yasserbdj96/hexor/actions/workflows/codeql-analysis.yml)
+[![CodeFactor](https://www.codefactor.io/repository/github/yasserbdj96/hexor/badge)](https://www.codefactor.io/repository/github/yasserbdj96/hexor)
+[![Supported Versions](https://img.shields.io/pypi/pyversions/hexor.svg)](https://pypi.org/project/hexor) 
+[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=yasserbdj96.hexor&format=true)](https://github.com/yasserbdj96/hexor)
+[![Open Source](https://img.shields.io/badge/Open%20Source-%E2%99%A5-red)](https://github.com/yasserbdj96/hexor)
+[![Stars](https://img.shields.io/github/stars/yasserbdj96/hexor?color=red)](https://github.com/yasserbdj96/hexor)
+[![Forks](https://img.shields.io/github/forks/yasserbdj96/hexor?color=red)](https://github.com/yasserbdj96/hexor)
+[![Watching](https://img.shields.io/github/watchers/yasserbdj96/hexor?label=Watchers&color=red&style=flat-square)](https://github.com/yasserbdj96/hexor)
+![GitHub contributors](https://img.shields.io/github/contributors/yasserbdj96/hexor)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/yasserbdj96/hexor)
+![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/yasserbdj96/hexor)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/yasserbdj96/hexor)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/yasserbdj96/hexor)
+![GitHub last commit](https://img.shields.io/github/last-commit/yasserbdj96/hexor)
+[![GitHub license](https://img.shields.io/github/license/yasserbdj96/hexor)](https://github.com/yasserbdj96/hexor)
+[![Join the chat at https://gitter.im/yasserbdj96/hexor](https://badges.gitter.im/yasserbdj96/hexor.svg)](https://gitter.im/yasserbdj96/hexor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 <h2>Languages:</h2>
 * python3
@@ -104,56 +125,51 @@ hexor(False,"rgb").c("Text is red and background is blue","255,0,0","26,115,232"
     <a href="https://raw.githubusercontent.com/yasserbdj96/hexor/main/screenshot/screenshot.png">
         <img alt="yasserbdj96" height="100" src="https://raw.githubusercontent.com/yasserbdj96/hexor/main/screenshot/screenshot.png">
     </a>
+    <a href="https://raw.githubusercontent.com/yasserbdj96/hexor/main/screenshot/screenshot_1.png">
+        <img alt="yasserbdj96" height="100" src="https://raw.githubusercontent.com/yasserbdj96/hexor/main/screenshot/screenshot_1.png">
+    </a>
 </div>
 
+<br>
 <h2>Changelog History:</h2>
-
-```
-## 0.0.12 [17-08-2022]
- - Fix bugs.
-
-## 0.0.11 [25-07-2022]
- - Fix bugs.
-
-## 0.0.10 [26-02-2022]
- - Fix bugs.
- 
-## 0.0.8 [26-02-2022]
- - Delete pipincluder pakage.
- - Fix bugs.
-
-## 0.0.7
-- Fix Bugs.
-
-## 0.0.6
- - fix bugs.
- - new build.
- 
-## 0.0.5
- - Import pakages by pipincluder.
- - Fix bugs.
- 
-## 0.0.4
- - Fix bugs.
- 
-## 0.0.3
- - Fix bugs.
- 
-## 0.0.2
- - Fix bugs.
- - Add RGB type.
- 
-## 0.0.1
- - First public release.
-```
-
-<h1></h1> 
-Don't forget to star ⭐ this repository
-<br>
-
-all posts [`#yasserbdj96`](#yasserbdj96) ,all views my own.
+<a href="https://raw.githubusercontent.com/yasserbdj96/hexor/main/CHANGELOG">Click to See changelog History</a>
 
 <br>
+<h2>Development By:</h2>
+
+Developer / Author: [yasserbdj96](https://github.com/yasserbdj96)
+
+<br>
+<h2>License:</h2>
+<p>The content of this repository is bound by the following <a href="https://raw.githubusercontent.com/yasserbdj96/hexor/main/LICENSE">LICENSE</a>.</p>
+
+<br>
+<h2>Support:</h2>
+<p>If you like `hexor` and want to see it improve furthur or want me to create intresting projects , You can buy me a coffee </p>
 <div align="center">
-    <a href="http://yasserbdj96.github.io/">Go to this link to get more information.</a>
+    <a href="https://ko-fi.com/yasserbdj96">
+        <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="hexor by yasserbdj96">
+    </a><br>
+    BTC: bc1q2dks8w8uurca5xmfwv4jwl7upehyjjakr3xga9<br>
 </div>
+
+<br><br>
+
+<p align="center">
+  <samp>
+    <a href="https://yasserbdj96.github.io/">website</a> .
+    <a href="https://github.com/yasserbdj96">github</a> .
+    <a href="https://gitlab.com/yasserbdj96">gitlab</a> .
+    <a href="https://www.linkedin.com/in/yasserbdj96">linkedin</a> .
+    <a href="https://twitter.com/yasserbdj96">twitter</a> .
+    <a href="https://instagram.com/yasserbdj96">instagram</a> .
+    <a href="https://www.facebook.com/yasserbdj96">facebook</a> .
+    <a href="https://www.youtube.com/@yasserbdj96">youtube</a> .
+    <a href="https://pypi.org/user/yasserbdj96">pypi</a> .
+    <a href="https://hub.docker.com/u/yasserbdj96">docker</a> .
+    <a href="https://t.me/yasserbdj96">telegram</a> .
+    <a href="https://gitter.im/yasserbdj96/yasserbdj96">gitter</a> .
+    <a href="mailto:yasser.bdj96@gmail.com">e-mail</a> .
+    <a href="https://ko-fi.com/yasserbdj96">sponsor</a>
+  </samp>
+</p>

@@ -30,12 +30,15 @@
 
 <h2>Supported Distributions:</h2>
 
-| Distribution     | Version Check | Python Test Version       | Supported | Status    | Everything works |
-| :--------------: | :-----------: | :-----------------------: | :-------: | :-------: | :--------------: |
-| Ubuntu           | 20.04.4       | 3.6, 3.7, 3.8, 3.9, 3.10  | Yes       | Working   | Yes              |
-| Windwos          | 10.0.20348    | 3.6, 3.7, 3.8, 3.9, 3.10  | Yes       | Working   | Yes              |
-| MacOS            | 11.6.6        | 3.6, 3.7, 3.8, 3.9, 3.10  | Yes       | Working   | Yes              |
-| Android (termux) | 10            | 3.6, 3.7, 3.8, 3.9, 3.10  | Yes       | Working   | Yes              |
+| Distribution   | Version Check | Python Version | Supported | Status    | Everything works |
+| :------------: | :-----------: | :------------: | :-------: | :-------: | :--------------: |
+| Ubuntu         | Last version  | 3.7 --> 3.11   | ✓         |  ✓       | ✓                |
+| Windwos        | Last version  | 3.7 --> 3.11   | ✓         |  ✓       | ✓                |
+| MacOS          | Last version  | 3.7 --> 3.11   | ✓         |  ✓       | ✓                |
+| Android-termux | Last version  | 3.7 --> 3.11   | ✓         |  ✓       | ✓                |
+| Nethunter      | Last version  | 3.7 --> 3.11   | ✓         |  ✓       | ✓                |
+
+
 
 <h2>Python Package Installation:</h2>
 
@@ -46,21 +49,7 @@
 # local install:
 ❯ git clone https://github.com/yasserbdj96/hexor.git
 ❯ cd hexor
-❯ sudo python setup.py install
-```
-
-<h2>Run without installation:</h2>
-
-```
-❯ git clone https://github.com/yasserbdj96/hexor.git
-❯ cd hexor
-❯ python3 run.py <TYPE*> <TEXT*> <FC*> <BG>
-
-# TYPE = hex/rgb.
-# TEXT = Your text.
-# FC   = Front Color.
-# BG   = Background Color.
-# *    = All inputs must be entered.
+❯ pip install .
 ```
 
 <h2>Script Usage:</h2>
@@ -68,31 +57,31 @@
 ```python
 from hexor import hexor
 
-# Make options:
-# p1=hexor(return_option,'type_of_color')
+# Usage example:
+# p1 = hexor(return_option, color_format)
 
-## return_option:[True,False]
-### True for return results
-### False for print results
+## return_option: [True, False]
+### True to return results
+### False to print results
 
-## type_of_color:['hex','rgb']
-### hex for hex colors for example : #ffffff, #cccccc
-### rgb for rgb colors for example : (255,255,255), (250,12,0)
+## color_format: ['hex', 'rgb']
+### 'hex' for hex colors (e.g., #ffffff, #cccccc)
+### 'rgb' for rgb colors (e.g., (255, 255, 255), (250, 12, 0))
 
-# default options is : hexor() = hexor(False,'hex')
-p1=hexor(<OPTIONS>)
+# The default options are: hexor() = hexor(False, 'hex')
+p1 = hexor(<return_option>, <color_format>)
 
 # To change text color only:
-p1.c("<TEXT>","<FOREGROUND>")
-	
-# To change text color & background together:
-p1.c("<TEXT>","<FOREGROUND>","<BACKGROUND>")
+p1.c("<TEXT>", "<FOREGROUND>")
+
+# To change text color and background together:
+p1.c("<TEXT>", "<FOREGROUND>", "<BACKGROUND>")
 ```
 
 <h2>Script Examples:</h2>
 
 ```python
-from hexor import hexor
+from hexor import *
 
 # Example:1
 p1=hexor(False,"hex")
@@ -100,21 +89,58 @@ p1.c("Text is red","#ff0000")
 p1.c("Text is red and background is blue","#ff0000","#1a73e8")
 
 # Example:2
+p1=hexor()
+p1.c("Text is red","#ff0000")
+p1.c("Text is red and background is blue","#ff0000","#1a73e8")
+
+# Example:3
 p2=hexor(True,"hex")
 print(p2.c("Text is red","#ff0000"))
 print(p2.c("Text is red and background is blue","#ff0000","#1a73e8"))
 
-# Example:3
+# Example:4
+p2=hexor(True)
+print(p2.c("Text is red","#ff0000"))
+print(p2.c("Text is red and background is blue","#ff0000","#1a73e8"))
+
+# Example:5
 p1=hexor(False,"rgb")
 p1.c("Text is red","255,0,0")
 p1.c("Text is red and background is blue","255,0,0","26,115,232")
 
-# Example:4
+# Example:6
+p1=hexor()
+p1.c("Text is red","255,0,0")
+p1.c("Text is red and background is blue","255,0,0","26,115,232")
+
+# Example:7
+p1=hexor()
+p1.c("Text is red","rgb(255,0,0)")
+p1.c("Text is red and background is blue","rgb(255,0,0)","rgb(26,115,232)")
+
+# Example:8
 p1=hexor(True,"rgb")
 print(p1.c("Text is red","255,0,0"))
 print(p1.c("Text is red and background is blue","255,0,0","26,115,232"))
 
-# Example:5
+# Example:9
+p1=hexor(True)
+print(p1.c("Text is red","255,0,0"))
+print(p1.c("Text is red and background is blue","255,0,0","26,115,232"))
+
+# Example:10
+p1=hexor(True,"rgb")
+print(p1.c("Text is red","rgb(255,0,0)"))
+print(p1.c("Text is red and background is blue","rgb(255,0,0)","rgb(26,115,232)"))
+
+# Example:11
+p1=hexor()
+p1.c("Text is red and background is blue","rgb(255,0,0)","26,115,232")
+p1.c("Text is red and background is blue","255,0,0","rgb(26,115,232)")
+p1.c("Text is red and background is blue","rgb(255,0,0)","#1a73e8")
+p1.c("Text is red and background is blue","255,0,0","#1a73e8")
+
+# Example:12
 hexor().c("Text is red","#ff0000")# hexor().c("Text is red","#ff0000")
 hexor(False,"rgb").c("Text is red and background is blue","255,0,0","26,115,232")
 ```
@@ -145,13 +171,9 @@ Developer / Author: [yasserbdj96](https://github.com/yasserbdj96)
 
 <br>
 <h2>Support:</h2>
-<p>If you like `hexor` and want to see it improve furthur or want me to create intresting projects , You can buy me a coffee </p>
-<div align="center">
-    <a href="https://ko-fi.com/yasserbdj96">
-        <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="hexor by yasserbdj96">
-    </a><br>
-    BTC: bc1q2dks8w8uurca5xmfwv4jwl7upehyjjakr3xga9<br>
-</div>
+<p>If you enjoy this project and would like to see it continue to improve, or if you would like me to create more interesting projects, please consider <a href="https://github.com/sponsors/yasserbdj96">sponsoring me</a>.</p>
+<br>
+<br>
 
 <br><br>
 

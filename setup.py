@@ -25,12 +25,13 @@ setup(
     long_description=open('README.md','r', encoding="utf8").read(),
     license='''Apache Software License''',
     packages=find_packages(),
+    url='https://github.com/yasserbdj96/hexor',
     project_urls={
         'Source': "https://github.com/yasserbdj96/hexor",
         'WebSite': "https://yasserbdj96.github.io/hexor",
-        #'Documentation': "https://yasserbdj96.github.io/hexor",
         'Chat': "https://gitter.im/yasserbdj96/hexor",
-        'Author WebSite':"https://yasserbdj96.github.io/"
+        'Author WebSite':"https://yasserbdj96.github.io/",
+        'Sponsor': "https://github.com/sponsors/yasserbdj96"
     },
     install_requires=[],
     keywords=['yasserbdj96', 'python', 'hexor', 'texts', 'colors.', 'hex','background', 'rgb'],

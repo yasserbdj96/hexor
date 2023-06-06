@@ -58,7 +58,7 @@
 from hexor import hexor
 
 # Usage example:
-# p1 = hexor(return_option, color_format)
+# p1 = hexor(return_option)
 
 ## return_option: [True, False]
 ### True to return results
@@ -66,10 +66,10 @@ from hexor import hexor
 
 ## color_format: ['hex', 'rgb']
 ### 'hex' for hex colors (e.g., #ffffff, #cccccc)
-### 'rgb' for rgb colors (e.g., (255, 255, 255), (250, 12, 0))
+### 'rgb' for rgb colors (e.g., (255, 255, 255), rgb(250, 12, 0))
 
-# The default options are: hexor() = hexor(False, 'hex')
-p1 = hexor(<return_option>, <color_format>)
+# The default options are: hexor() = hexor(False)
+p1 = hexor(<return_option>)
 
 # To change text color only:
 p1.c("<TEXT>", "<FOREGROUND>")
@@ -84,65 +84,49 @@ p1.c("<TEXT>", "<FOREGROUND>", "<BACKGROUND>")
 from hexor import *
 
 # Example:1
-p1=hexor(False,"hex")
+p1=hexor()
 p1.c("Text is red","#ff0000")
 p1.c("Text is red and background is blue","#ff0000","#1a73e8")
 
 # Example:2
-p1=hexor()
-p1.c("Text is red","#ff0000")
-p1.c("Text is red and background is blue","#ff0000","#1a73e8")
-
-# Example:3
-p2=hexor(True,"hex")
-print(p2.c("Text is red","#ff0000"))
-print(p2.c("Text is red and background is blue","#ff0000","#1a73e8"))
-
-# Example:4
 p2=hexor(True)
 print(p2.c("Text is red","#ff0000"))
 print(p2.c("Text is red and background is blue","#ff0000","#1a73e8"))
 
+# Example:3
+p3=hexor()
+p3.c("Text is red","255,0,0")
+p3.c("Text is red and background is blue","255,0,0","26,115,232")
+
+# Example:4
+p4=hexor(True)
+print(p4.c("Text is red","255,0,0"))
+print(p4.c("Text is red and background is blue","255,0,0","26,115,232"))
+
 # Example:5
-p1=hexor(False,"rgb")
-p1.c("Text is red","255,0,0")
-p1.c("Text is red and background is blue","255,0,0","26,115,232")
+p5=hexor()
+p5.c("Text is red","rgb(255,0,0)")
+p5.c("Text is red and background is blue","rgb(255,0,0)","rgb(26,115,232)")
 
 # Example:6
-p1=hexor()
-p1.c("Text is red","255,0,0")
-p1.c("Text is red and background is blue","255,0,0","26,115,232")
+p6=hexor(True)
+print(p6.c("Text is red","rgb(255,0,0)"))
+print(p6.c("Text is red and background is blue","rgb(255,0,0)","rgb(26,115,232)"))
 
 # Example:7
-p1=hexor()
-p1.c("Text is red","rgb(255,0,0)")
-p1.c("Text is red and background is blue","rgb(255,0,0)","rgb(26,115,232)")
+p7=hexor()
+p7.c("Text is red and background is blue","rgb(255,0,0)","26,115,232")
+p7.c("Text is red and background is blue","255,0,0","rgb(26,115,232)")
+p7.c("Text is red and background is blue","rgb(255,0,0)","#1a73e8")
+p7.c("Text is red and background is blue","255,0,0","#1a73e8")
 
 # Example:8
-p1=hexor(True,"rgb")
-print(p1.c("Text is red","255,0,0"))
-print(p1.c("Text is red and background is blue","255,0,0","26,115,232"))
+hexor().c("Text is red","#ff0000")
+hexor().c("Text is red and background is blue","255,0,0","rgb(26,115,232)")
 
 # Example:9
-p1=hexor(True)
-print(p1.c("Text is red","255,0,0"))
-print(p1.c("Text is red and background is blue","255,0,0","26,115,232"))
-
-# Example:10
-p1=hexor(True,"rgb")
-print(p1.c("Text is red","rgb(255,0,0)"))
-print(p1.c("Text is red and background is blue","rgb(255,0,0)","rgb(26,115,232)"))
-
-# Example:11
-p1=hexor()
-p1.c("Text is red and background is blue","rgb(255,0,0)","26,115,232")
-p1.c("Text is red and background is blue","255,0,0","rgb(26,115,232)")
-p1.c("Text is red and background is blue","rgb(255,0,0)","#1a73e8")
-p1.c("Text is red and background is blue","255,0,0","#1a73e8")
-
-# Example:12
-hexor().c("Text is red","#ff0000")# hexor().c("Text is red","#ff0000")
-hexor(False,"rgb").c("Text is red and background is blue","255,0,0","26,115,232")
+print(hexor(True).c("Text is red","#ff0000"))
+print(hexor(True).c("Text is red and background is blue","255,0,0","rgb(26,115,232)"))
 ```
 
 <h2>Screenshot:</h2>
@@ -192,6 +176,6 @@ Developer / Author: [yasserbdj96](https://github.com/yasserbdj96)
     <a href="https://t.me/yasserbdj96">telegram</a> .
     <a href="https://gitter.im/yasserbdj96/yasserbdj96">gitter</a> .
     <a href="mailto:yasser.bdj96@gmail.com">e-mail</a> .
-    <a href="https://ko-fi.com/yasserbdj96">sponsor</a>
+    <a href="https://github.com/sponsors/yasserbdj96">sponsor</a>
   </samp>
 </p>
